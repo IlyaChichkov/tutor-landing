@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-col-2">
+  <div class="flex flex-row h-full">
     <ProfileSidebar/>
-    <router-view></router-view>
+    <PageContent/>
   </div>
 </template>
 
@@ -9,17 +9,16 @@
 import './App.css'
 import './basic-styles.css'
 import ProfileSidebar from "@/components/ProfileSidebar";
+import PageContent from "@/components/PageContent";
 
 export default {
   name: 'App',
   components: {
+    PageContent,
     ProfileSidebar
   }
 }
 </script>
 
 <style>
-#app {
-  margin-top: 60px;
-}
 </style>

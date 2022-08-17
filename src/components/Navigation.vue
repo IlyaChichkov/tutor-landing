@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nav-container">
     <a>
       <router-link :to="{name: 'Home'}">Главная</router-link>
     </a>
@@ -19,5 +19,7 @@ export default {
 </script>
 
 <style scoped>
-
+.nav-container{
+  @apply flex flex-col items-center leading-loose font-rubik font-medium text-secondary
+}
 </style>

@@ -1,10 +1,10 @@
 
 h1, h2, h3, h4 {
-    @apply text-black dark:text-white;
+    @apply text-black;
 }
 
 h1, h2 {
-    @apply text-black dark:text-white m-0 mb-4 mt-7;
+    @apply m-0 mb-4 mt-7;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h3 {
 }
 
 p , label{
-    @apply text-base text-darkgray;
+    @apply text-base text-darkgray font-nunito;
 }
 
 input{
@@ -32,16 +32,22 @@ li {
 }
 
 hr {
-    @apply block my-8 bg-secondary border-0.5 border-solid border-secondary;
+    @apply block my-4 bg-secondary border-0.5 border-solid border-secondary;
     width: 70%;
 }
 
 body {
-    @apply bg-white;
+    @apply bg-white m-0 ;
+}
+
+html { overflow-y: hidden; }
+
+#app{
+    @apply h-screen;
 }
 
 a {
-    @apply no-underline text-main hover:text-white;
+    @apply no-underline text-secondary hover:text-main;
 }
 
 button.btn-primary{

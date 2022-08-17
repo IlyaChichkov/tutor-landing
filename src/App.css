@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+.page-content{
+    @apply mt-6 px-8;
+}
