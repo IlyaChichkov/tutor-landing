@@ -1,0 +1,69 @@
+
+h1, h2, h3, h4 {
+    @apply text-black dark:text-white;
+}
+
+h1, h2 {
+    @apply text-black dark:text-white m-0 mb-4 mt-7;
+}
+
+h1 {
+    @apply text-4xl font-bold;
+}
+
+h2 {
+    @apply text-3xl font-medium;
+}
+
+h3 {
+    @apply text-black dark:text-white font-light text-base m-0 mt-1 mb-2;
+}
+
+p , label{
+    @apply text-base text-darkgray;
+}
+
+input{
+    @apply caret-white border-none rounded p-2 mt-2 bg-secondary placeholder-gray font-nunito text-white
+}
+
+li {
+    @apply font-nunito text-black list-none;
+}
+
+hr {
+    @apply block my-8 bg-secondary border-0.5 border-solid border-secondary;
+    width: 70%;
+}
+
+body {
+    @apply bg-white;
+}
+
+a {
+    @apply no-underline text-main hover:text-white;
+}
+
+button.btn-primary{
+    @apply bg-secondary border-none p-2 rounded font-nunito font-normal text-white
+}
+
+textarea{
+    @apply caret-white border-none rounded p-2 mt-2 bg-secondary placeholder-gray font-nunito text-white
+}
+
+textarea:focus-visible{
+    @apply outline outline-offset-2 outline-1 outline-main;
+}
+
+input:focus-visible{
+    @apply outline outline-offset-2 outline-1 outline-main;
+}
+
+button.btn-empty{
+    @apply bg-transparent border-none p-0 font-nunito font-normal text-white
+}
+
+button.btn-round{
+    @apply bg-white border-none p-2 rounded-full font-nunito font-normal text-white
+}
