@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-row h-full">
+  <div id="app-page" class="flex flex-row h-full">
     <ProfileSidebar/>
-    <PageContent/>
+    <PageContent v-if="true"/>
   </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
   components: {
     PageContent,
     ProfileSidebar
+  },
+  data(){
+    return{
+
+    }
   }
 }
 </script>

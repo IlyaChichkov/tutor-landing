@@ -1,6 +1,6 @@
 <template>
-  <div class="container-center">
-    <div class="container">
+  <div  class="container-center">
+    <div v-if="!mobile || showMobileMenu" class="container">
       <section>
         <div class="flex flex-col items-center">
           <div class="profile-photo-container">
@@ -41,23 +41,52 @@
         </div>
       </section>
     </div>
+    <div v-if="mobile">
+      <button v-on:click="mobileMenuBtn">
+        <svg width="36" height="36" viewBox="0 0 24 24"
+             fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 12.0001V14.6701C18 17.9801 15.65
+        19.3401 12.78 17.6801L10.47 16.3401L8.16007
+        15.0001C5.29007 13.3401 5.29007 10.6301 8.16007
+         8.97005L10.47 7.63005L12.78 6.29005C15.65 4.66005
+          18 6.01005 18 9.33005V12.0001Z" stroke="#6833FF"
+                stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
 import NavigationComponent from "@/components/Navigation";
+
 export default {
   name: "ProfileSidebar",
-  components: {NavigationComponent}
+  components: {NavigationComponent},
+  data(){
+    return{
+      mobile: null,
+      showMobileMenu: null
+    }
+  },
+  methods:{
+    mobileMenuBtn(){
+      this.store.mobile = !this.store.mobile;
+    }
+  }
 }
 </script>
 
 <style scoped>
 .container-center{
-  @apply flex flex-row items-center border-solid border-0 border-r-2 border-gray p-8 text-center;
+  @apply flex flex-row items-center border-solid
+  border-0 border-x-2 border-gray p-2 text-center h-auto;
+  @apply ml-0 xl:ml-[15%];
 }
 .container{
-  @apply flex flex-col items-center min-w-[100vh] sm:min-w-[300px];
+  @apply flex flex-col items-center min-w-[100%] md:min-w-[260px] lg:min-w-[300px];
 }
 .social-icon{
   @apply mr-3;

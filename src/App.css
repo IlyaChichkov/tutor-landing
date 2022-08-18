@@ -4,6 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
 
+body{
+    @apply h-screen;
+}
+
+#app{
+    @apply h-screen;
+}
+
+html{
+    @apply overflow-y-scroll md:overflow-y-hidden
+}
+
 .page-content{
-    @apply mt-6 px-8;
+
+}
+
+#app-page{
+    @apply flex-col md:flex-row min-w-[420px];
 }
