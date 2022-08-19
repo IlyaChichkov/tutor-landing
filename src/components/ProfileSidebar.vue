@@ -73,7 +73,7 @@ export default {
   },
   methods:{
     mobileMenuBtn(){
-      this.store.mobile = !this.store.mobile;
+      console.log(this.$store.mobile);
     }
   }
 }

@@ -1,16 +1,7 @@
 import { createApp } from 'vue'
+import Vuex from 'vuex'
 import App from './App.vue'
-import Vuex, {createStore} from 'vuex'
 import {router} from "@/router/router";
+import {VuexStorage} from './store/vuex-storage'
 
-const store = createStore({
-    state () {
-        return {
-            count: 1
-        }
-    }
-})
-
-const app = createApp(App).use(router).use(Vuex).mount('#app')
-
-app.use(store)
+createApp(App).use(VuexStorage).use(Vuex).use(router).mount('#app')
