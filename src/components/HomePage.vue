@@ -117,7 +117,7 @@
             </div>
           </div>
           <div class="relative">
-            <button class="btn-primary" id="study-btn" v-on:click="this.$router.push({name: 'Contacts'})">
+            <button class="btn-primary" id="study-btn" v-on:click="this.$router.push({name: 'Study'})">
               Записаться на занятия
             </button>
           </div>
@@ -136,9 +136,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .main-info-columns{
   @apply sm:grid sm:grid-cols-2 gap-4 max-w-[98%] sm:max-w-[98%] xl:max-w-[90%];
+}
+.main-info-columns.first-col-main{
+  @apply sm:grid sm:grid-cols-3 gap-4 max-w-[98%] sm:max-w-[98%] xl:max-w-[90%];
 }
 .col-block{
   @apply mb-4 sm:mb-0  relative p-4 border-solid border-secondary border-2 rounded;

@@ -32,16 +32,17 @@ export default {
 
 <style scoped>
 .roadmap{
-  @apply relative mb-2 min-w-[420px] max-w-[1120px] justify-between;
+  @apply relative mb-2 min-w-[420px] max-w-[1120px] justify-between items-center;
+  @apply h-[60px];
 }
 .roadmap::before{
-  @apply absolute -z-10 h-[12px] bg-secondary top-[14px] bottom-0 left-0 right-[0px] rounded-full;
+  @apply absolute -z-10 h-[12px] bg-secondary top-[24px] bottom-0 left-0 right-[0px] rounded-full;
   content: "";
   background: rgb(74,26,212);
   background: linear-gradient(90deg, rgba(74,26,212,0) 0%, rgba(74,26,212,1) 50%, rgba(74,26,212,0) 100%);
 }
 .roadmap-text{
-  @apply mx-0 mr-5 last:mr-0 p-1;
+  @apply mx-0 mr-5 last:mr-0 p-0 sm:p-1 text-sm sm:text-xl max-w-[76px] sm:max-w-fit;
 }
 .roadmap-item{
   @apply first:ml-[10%] last:mr-[10%];

@@ -24,7 +24,7 @@ p , label{
 }
 
 input{
-    @apply caret-white border-none rounded p-2 mt-2 bg-secondary placeholder-gray font-nunito text-white
+    @apply caret-white border-secondary border-solid border-2 rounded p-2 mt-2 bg-white placeholder-darkgray font-nunito text-black
 }
 
 li {
@@ -53,7 +53,7 @@ button.btn-primary{
 }
 
 textarea{
-    @apply caret-white border-none rounded p-2 mt-2 bg-secondary placeholder-gray font-nunito text-white
+    @apply caret-white border-secondary border-solid border-2 rounded p-2 mt-2 bg-white placeholder-darkgray font-nunito text-black
 }
 
 textarea:focus-visible{
