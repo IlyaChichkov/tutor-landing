@@ -2,9 +2,6 @@
   <div id="app-page" class="flex flex-row h-full">
     <ProfileSidebar/>
     <PageContent v-if="true"/>
-    <p>
-      {{}}
-    </p>
   </div>
 </template>
 
@@ -19,11 +16,6 @@ export default {
   components: {
     PageContent,
     ProfileSidebar
-  },
-  data(){
-    return{
-
-    }
   }
 }
 </script>
